@@ -1,0 +1,164 @@
+/* RESET DO CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+      background-size: auto 100vh;
+      background-color: whitesmoke;
+      margin: 30px;
+  }
+  
+  /* SE A TELA TIVER AO MENOS 400PX VAI CARREGAR ESTES ESTILOS */
+  @media(min-width: 400px) {
+    body{
+      font-size: 14px;
+    }
+  }
+  
+  @media(min-width: 600px) {
+    body{
+      font-size: 18px;
+    }
+  }
+  
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  a {
+    color: teal;
+    text-decoration: none;
+  }
+  
+  .menu {
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .menu ul{
+    display: flex;
+    justify-content: space-around;  
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  .menu a {
+    color: black;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 1s, color 1s;
+  }
+  .menu a:active,
+  .menu a:hover{
+    background-color: black;
+    color: whitesmoke;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .portfolio {
+    padding: 5em;
+    height: 100vh;
+  }
+  
+  .portfolio h2 {
+    font-family: 'Alfa Slab One', cursive;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+  }
+  
+  .portfolio .grid{
+    display: grid;
+    gap: 1em;
+  }
+  
+  @media(min-width: 560px){
+    .portfolio .grid{
+      grid-template-columns: 240px 240px;
+    }
+  }
+  
+  @media(min-width: 880px){
+    .portfolio .grid{
+      grid-template-columns: 240px 240px 240px;
+      align-content: center;
+      height: calc(100vh - 8em - 48px - 1.5em);
+      justify-content: center;
+    }
+  }
+  
+  .portfolio figure{
+    text-align: center;
+  }
+  
+  .portfolio figcaption {
+    font-family: 'Overlock', cursive;
+    font-size: 18px;
+  }
+  
+  .img-portfolio {
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-position: left;  
+    transition: transform 500ms;
+  }
+  
+  .img-portfolio:hover{
+    transform: scale(0.9);
+  }
+  
+  .agenda {
+    padding: 5em;
+    height: 100vh;  
+  }
+  
+  .agenda iframe {
+    padding-top:10px;
+    text-align: center;
+  }
+  
+  footer {
+      padding: 1em;
+      text-align: center;
+      font-size: 12px;
+  }
+  
+  #fundo{
+    height: 300px;
+    background-color: whitesmoke;
+    position: absolute;
+  }
+  
+  #texto1 {
+      position: relative;
+      text-align: center;
+      font-family: 'Alfa Slab One', cursive;    
+      font-size: 100px;
+      padding: 70px;
+  }
+  
+  #texto2 {
+      position: absolute;
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      text-shadow: 2px 1px 1px white; 
+      font-size: 100px;
+      top: 120px;
+      left: 210px;
+  }
